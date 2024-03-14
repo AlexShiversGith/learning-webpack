@@ -1,0 +1,19 @@
+{
+  "name": "learning-webpack",
+  "version": "1.0.0",
+  "description": "first webpack configuring",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack --mode development"
+  },
+  "keywords": [
+    "webpack",
+    "frontend"
+  ],
+  "author": "Alex Shivers",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
