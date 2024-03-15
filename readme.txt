@@ -69,8 +69,19 @@ html, css, s[ac]ss, less файлов. clean чистит папку dist
                 }
             ]
         }
-    }
-
+    } // подключаем изображения
+12. npm i -D webpack-dev-server // подключение dev server'a для авто перезагрузки 
+страницы при изменениях в коде
+13. webpack.config.js:
+    module.exports = {
+        devServer: {
+            port: 3000,
+        },
+    } // назначаем порт dev сервера
+14. package.json:
+        "scripts": {
+            "start": "webpack-dev-server --mode development --open"
+        } // добавляем скрипт для запуска dev сервера
 
 ---------------------------------------------------------------------------------------
 
