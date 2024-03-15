@@ -25,7 +25,7 @@ html, css, s[ac]ss, less файлов. clean чистит папку dist
         mode: 'development'
     } // обозначение статуса приложения dev/prod.
 8. webpack.config.js:
-    module.exports ={
+    module.exports = {
         plugins: [
             new HtmlWebpackPlugin({
                 title: "Custom template",
@@ -36,7 +36,7 @@ html, css, s[ac]ss, less файлов. clean чистит папку dist
         ] 
     }// подключение установленных плагинов
 9. webpack.config.js: 
-    module.exports ={
+    module.exports = {
         module: {
             rules: [
                 {
@@ -54,6 +54,22 @@ html, css, s[ac]ss, less файлов. clean чистит папку dist
             ]
         }
     } // подключение стилей
+10. npm i -D file-loder // плагин для обработки файлов
+11. webpack.config.js:
+    module.exports = {
+        module: {
+            rules: [
+                {
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    use: [
+                        {
+                            loader: 'file-loader'
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 
 
 ---------------------------------------------------------------------------------------

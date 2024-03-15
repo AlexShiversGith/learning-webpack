@@ -32,7 +32,15 @@ module.exports = {
             {
                 test: /\.less$/i,
                 use: ['style-loader', 'css-loader', 'less-loader']
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
+            },
         ]
     }
 }
