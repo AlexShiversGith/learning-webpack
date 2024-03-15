@@ -1,3 +1,6 @@
+Изучаем webpack. По main ветке в гите будет чистое приложение на js и собраное на webpack.
+По ветке babel уже с установкой react.
+
 терминал:
 1. npm init // инициализация проекта, получение package.json
 2. npm i -D webpack webpack-cli // установка webpack
